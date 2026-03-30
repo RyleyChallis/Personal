@@ -40,3 +40,36 @@
     background-color: var(--cta-hover);
     color: white;
 }
+
+.error-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #1a3a32;
+    color: #fff;
+}
+
+.error-content .btn-primary:hover {
+    background-color: #122a24;
+}
+
+.error-content .btn-secondary {
+    border: 1px solid #1a3a32;
+    color: #1a3a32;
+}
+
+.error-content .btn-secondary:hover {
+    background-color: #f9f9f9;
+}
