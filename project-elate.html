@@ -3,81 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elate Coffee | Ryley C. Case Study</title>
+    <title>Elate Coffee | Case Study</title>
+    <link rel="stylesheet" href="css/total.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/total.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html" class="logo">RC.</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Selected Works</a></li>
-            <li><a href="mailto:ryleychallis@outlook.com">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section class="project-hero">
-            <div class="hero-container">
-                <span class="category">Hospitality / Web Development</span>
-                <h1 class="serif-title">Elate <span>Coffee</span></h1>
-                <div class="hero-meta">
-                    <div class="meta-item"><span>Year</span>2024</div>
-                    <div class="meta-item"><span>Role</span>Full Stack Dev</div>
-                    <div class="meta-item"><span>Stack</span>Vanilla JS / SCSS</div>
-                </div>
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">RC.</a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="projects.html">SELECTED WORKS</a>
+                <a href="contact.html">CONTACT</a>
             </div>
-            <div class="hero-image-full">
-                <img src="img/elate-hero.jpg" alt="Elate Coffee Web Design">
-            </div>
-        </section>
+        </nav>
+    </header>
 
-        <section class="project-details grid-container">
-            <div class="detail-label">01 / The Brief</div>
-            <div class="detail-content">
-                <p class="lead-text">Elate is a Brighton-based roastery that needed a digital home reflecting their "Coastal Soul" philosophy. They required more than a menu; they needed an immersive experience that converted casual browsers into loyal subscribers.</p>
-                <p>The challenge was to balance high-resolution atmospheric photography with lightning-fast load speeds, ensuring the artisanal feel wasn't compromised by technical lag.</p>
-            </div>
-        </section>
-
-        <section class="image-gallery">
-            <div class="gallery-grid">
-                <div class="gallery-item tall">
-                    <img src="img/elate-mobile.jpg" alt="Mobile UI">
-                </div>
-                <div class="gallery-item wide">
-                    <img src="img/elate-desktop.jpg" alt="Desktop UI">
-                </div>
-            </div>
-        </section>
-
-        <section class="project-details grid-container dark-mode">
-            <div class="detail-label">02 / Execution</div>
-            <div class="detail-content">
-                <h3 class="serif-subtitle">Performance-First Engineering</h3>
-                <div class="tech-grid">
-                    <div class="tech-card">
-                        <h4>Custom Core</h4>
-                        <p>Built without bulky frameworks to ensure a 99/100 performance score on mobile devices.</p>
+    <main class="case-study">
+        <section class="hero-section">
+            <div class="content-wrapper">
+                <span class="eyebrow">Hospitality / Web Development</span>
+                <h1 class="hero-title">Elate <span>Coffee</span></h1>
+                
+                <div class="hero-meta-grid">
+                    <div class="meta-item">
+                        <small>YEAR</small>
+                        <p>2024</p>
                     </div>
-                    <div class="tech-card">
-                        <h4>Fluid UI</h4>
-                        <p>Implemented custom CSS transitions that mimic the slow, rhythmic flow of pouring coffee.</p>
+                    <div class="meta-item">
+                        <small>ROLE</small>
+                        <p>Full Stack Dev</p>
+                    </div>
+                    <div class="meta-item">
+                        <small>STACK</small>
+                        <p>Vanilla JS / SCSS</p>
                     </div>
                 </div>
             </div>
+            <div class="hero-image-box">
+                <img src="img/elate-hero.jpg" alt="Elate Coffee Interface">
+            </div>
         </section>
 
-        <footer class="next-project">
-            <a href="marroccos.html">
-                <span class="next-label">Next Project</span>
-                <h2 class="serif-title">Marrocco's Hove —</h2>
+        <section class="info-section">
+            <div class="section-grid">
+                <div class="grid-label">01 / The Brief</div>
+                <div class="grid-body">
+                    <p class="large-text">Elate is a Brighton-based roastery that needed a digital home reflecting their "Coastal Soul" philosophy.</p>
+                    <p>The challenge was to balance high-resolution atmospheric photography with lightning-fast load speeds, ensuring the artisanal feel wasn't compromised by technical lag.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-container">
+                <div class="img-tall"><img src="img/mobile-view.jpg" alt="Mobile"></div>
+                <div class="img-wide"><img src="img/desktop-view.jpg" alt="Desktop"></div>
+            </div>
+        </section>
+
+        <section class="info-section dark-accent">
+            <div class="section-grid">
+                <div class="grid-label">02 / Execution</div>
+                <div class="grid-body">
+                    <h2 class="sub-title">Performance-First Engineering</h2>
+                    <div class="tech-cards">
+                        <div class="card">
+                            <h3>Custom Core</h3>
+                            <p>Built without bulky frameworks to ensure a 99/100 performance score.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Fluid UI</h3>
+                            <p>Custom CSS transitions that mimic the slow, rhythmic flow of pouring coffee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="project-footer">
+            <a href="marroccos.html" class="next-link">
+                <span>NEXT PROJECT</span>
+                <h2>Marrocco's Hove —</h2>
             </a>
         </footer>
     </main>
-
 </body>
 </html>
