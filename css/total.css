@@ -1,0 +1,107 @@
+/* Container & Basics */
+.case-study-wrapper {
+    padding-top: 120px;
+    background-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    padding: 100px var(--side-gutter);
+}
+
+/* Typography */
+.serif-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(4rem, 10vw, 8rem);
+    line-height: 0.9;
+    margin: 20px 0;
+}
+
+.serif-title span {
+    font-style: italic;
+    color: #d4bd97; /* Your Sand Color */
+}
+
+/* Hero Meta */
+.hero-meta {
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.meta-item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.meta-item span {
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+/* Gallery */
+.image-gallery {
+    padding: 0 var(--side-gutter);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Execution Section */
+.dark-mode {
+    background-color: #1a3a32; /* Your Deep Green */
+    color: #fff;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.tech-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #d4bd97;
+}
+
+/* Footer Link */
+.next-project {
+    text-align: center;
+    padding: 150px 0;
+    border-top: 1px solid #eee;
+}
+
+.next-project a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.next-label {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 20px;
+}
