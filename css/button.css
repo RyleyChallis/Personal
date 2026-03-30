@@ -71,5 +71,6 @@
 }
 
 .error-content .btn-secondary:hover {
-    background-color: #f9f9f9;
+    background-color: #1a3a32;
+    color: white;
 }
