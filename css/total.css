@@ -96,6 +96,9 @@
     gap: 60px;
     border-top: 1px solid #eee;
     padding-top: 60px;
+
+    margin: 0 auto;
+    justify-content: center;
 }
 
 .info-block h3 {
