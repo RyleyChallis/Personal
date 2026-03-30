@@ -1,0 +1,42 @@
+.btn-primary {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: var(--cta);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--text);
+}
+
+.btn-primary:hover {
+    background-color: var(--cta-hover);
+    color: white;
+}
+
+.featured-cta {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.featured-btn {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: transparent;
+    color: #2d2d2d;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--text);
+}
+
+.featured-btn:hover {
+    background-color: var(--cta-hover);
+    color: white;
+}
