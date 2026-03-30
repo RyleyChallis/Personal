@@ -1,10 +1,4 @@
-.case-study-wrapper {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 160px var(--side-gutter) 80px;
-}
 
-/* Header Styling */
 .project-header {
     margin-bottom: 60px;
 }
