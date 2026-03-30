@@ -1,3 +1,29 @@
+:root {
+    --bg: #fafafa;
+    --bg-two: #e4e4e4;
+    --text: #1a1a1a;
+    --accent: #c5a47e;
+    --cta: #2D3E2E;
+    --cta-hover: #182118;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+main {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
 .project-header {
     margin-bottom: 60px;
@@ -106,6 +132,7 @@
     font-size: 1.8rem;
     margin-bottom: 20px;
     font-weight: 400;
+    color: var(--accent);
 }
 
 .info-block p, .tools-list li {
