@@ -14,7 +14,9 @@ body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
-}/* 1. Layout Reset & Texture */
+}
+
+/* 1. Layout Reset & Texture */
 .case-study-wrapper {
     padding-top: 100px;
     background-color: #fff;
