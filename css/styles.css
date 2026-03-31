@@ -313,7 +313,7 @@ h2 {
     gap: 30px;
     padding: 40px 50px;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 2px solid #c1c1c1;
+    border: 1px solid #c1c1c1;
     height: 275px;
 }
 
@@ -339,7 +339,7 @@ h2 {
 .item-content h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
-    color: var(--accent);
+    color: var(--accent) !important;
     margin-bottom: 10px;
 }
 
@@ -353,6 +353,15 @@ h2 {
     min-height: 100vh;
     padding-bottom: 50px;
     background-color: #fff;
+}
+
+.about-section .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto !important;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .about-section .section-number {
