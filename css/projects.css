@@ -67,7 +67,7 @@ main {
     justify-self: center;
     width: 100%;
     height: 350px !important;
-    max-width: 350px !important;
+    max-height: 350px !important;
 }
 
 .project-item a {
