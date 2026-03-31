@@ -344,6 +344,7 @@ h2 {
 }
 
 .item-content p {
+    font-size: 1.125rem !important;
     color: #666;
     line-height: 1.7;
     max-width: 400px;
