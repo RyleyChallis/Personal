@@ -299,9 +299,12 @@ h1 span, h2 span {
     max-width: 80%;
 }
 
+h2 {
+    color: #1a3a32 !important;
+}
+
 .deliverables-sticky h2 {
     font-size: 3rem;
-    color: #1a3a32;
     margin: 20px 0;
 }
 
