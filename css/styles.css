@@ -309,18 +309,17 @@ h2 {
 }
 
 .deliverable-item {
-    display: flex;
-    gap: 30px;
-    padding: 40px 50px;
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 1px solid #c1c1c1;
-    height: 275px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
 }
 
 .deliverable-item:hover {
-    background-color: #ffffff;
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    border-color: #d4bd97;
 }
 
 .deliverable-item:hover .item-index {
