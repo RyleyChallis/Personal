@@ -349,6 +349,10 @@ h2 {
     max-width: 400px;
 }
 
+.item-content:hover p {
+    color: #a9a9a9;
+}
+
 .about-section {
     min-height: 100vh;
     padding-bottom: 50px;
