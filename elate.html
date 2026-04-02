@@ -7,35 +7,65 @@
     <link rel="stylesheet" href="css/total.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/project-page.css">
 </head>
 <body>
 
-    <nav class="nav-container">
+    <nav>
         <a href="index.html" class="logo">RC.</a>
-        <div class="nav-links">
-            <a href="index.html">HOME</a>
-            <a href="projects.html">SELECTED WORKS</a>
-        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Selected Works</a></li>
+            <li><a href="mailto:ryleychallis@outlook.com">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-        <header class="services-header">
-            <span class="section-number">01 / Case Study</span>
-            <h2 class="section-title">Elate Coffee - Artisan Roastery</h2>
-        </header>
+        <section class="section">
+            <div class="container">
+                <header class="services-header">
+                    <h2 class="section-title">Elate Coffee</h2>
+                    <p>An artisan roastery focused on quality and craftsmanship.</p>
+                </header>
 
-        <div class="featured-container">
-            <div class="featured-card">
-                <div class="featured-image-frame">
-                    <img src="css/img/project-elate.png" alt="Project Screenshot">
+                <div class="image-container">
+                    <a href="https://ryleychallis.github.io/Elate/" class="featured-card">
+                        <div class="featured-image-frame">
+                            <div class="overlay"><span>View Live Site</span></div>
+                            <img src="css/img/project-elate.png" alt="Project Screenshot">
+                        </div>
+                    </a>
                 </div>
             </div>
-            <p class="featured-description">
-                A bespoke digital experience for a Brighton-based coffee roastery, 
-                focusing on high-conversion storytelling and a seamless booking flow.
-            </p>
-        </div>
+        </section>
+
+        <section class="section" id="info">
+            <div class="container">
+                <h2>What to Know about Elate</h2>
+                <div class="info-container">
+                    <div class="main-info">
+                        <h4>Project Objective</h4>
+                        <p>This project was a self-initiated design study to bridge the gap between Elate’s premium physical atmosphere and its digital presence. I identified an opportunity to move beyond standard templates and create a "Digital Flagship" that mirrors the shop’s minimalist, high-end interior.</p>
+                    </div>
+                    <div class="info-item">
+                        <img src="css/img/elate/first.webp">
+                        <div class="info-desc">
+                            <h4>The Essence of Elate</h4>
+                            <p>Located in the heart of the Brighton and Hove area, Elate Coffee is more than a destination for caffeine; it is a sanctuary for the modern connoisseur. Founded on the principle that the perfect cup of coffee is an intersection of science and soul, Elate has established itself as a cornerstone of the local artisan scene. Every bean is ethically sourced and roasted to highlight its unique geographical profile, ensuring a sensory experience that is as sophisticated as it is consistent.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <img src="css/img/elate/second.webp">
+                        <div class="info-desc">
+                            <h4>A Legacy of Quality and Craftsmanship</h4>
+                            <p>What sets Elate apart is an uncompromising commitment to the "Small Batch" philosophy. In an era of mass-produced convenience, the team at Elate prioritizes the slow, deliberate process of manual brewing and precision espresso extraction. This dedication to craftsmanship is reflected in their rotating seasonal menus, which showcase a curated selection of global roasts, each chosen for its ability to tell a story of origin and expertise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-cta">
+                    <a href="marroccos.html">Next Project: Marrocco's</a>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

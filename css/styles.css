@@ -289,6 +289,7 @@ h2 {
     padding: 40px;
     transition: all 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-height: 330px;
 }
 
 .deliverable-item:hover {
@@ -325,8 +326,8 @@ h2 {
     max-width: 400px;
 }
 
-.item-content:hover p {
-    color: #a9a9a9;
+.deliverable-item:hover p {
+    color: #9b9b9b;
 }
 
 .about-section {
@@ -584,7 +585,7 @@ h2 {
 }
 
 .statement-section h2 {
-    color: #1a1a1a !important;
+    color: white !important;
 }
 
 .statement-content {

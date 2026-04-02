@@ -1,3 +1,12 @@
+:root {
+    --bg: #fafafa;
+    --bg-two: #e4e4e4;
+    --text: #1a1a1a;
+    --accent: #c5a47e;
+    --cta: #2D3E2E;
+    --cta-hover: #182118;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -29,15 +38,21 @@ main {
     margin: 0 auto;
 }
 
-.page-title {
+.projects-page .page-title {
     padding-left: 10%;
 }
 
 .page-title h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
+    color: var(--accent);
     margin-top: 10px;
     margin-bottom: 50px;
+}
+
+.page-title span {
+    font-family: 'lato', sans-serif;
+    color: #4a4a4a;
 }
 
 .projects-grid {
@@ -197,6 +212,10 @@ main {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+}
+
+.connect-section .page-title {
+    padding: 0 !important;
 }
 
 .connect-section h2 {

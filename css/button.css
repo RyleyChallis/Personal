@@ -1,19 +1,13 @@
 .btn-primary {
     display: inline-block;
-    padding: 18px 35px;
     background-color: var(--cta);
     color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    transition: all 0.3s ease;
-    border: 1px solid var(--text);
+    border: 1px solid #1a3a32;
 }
 
 .btn-primary:hover {
-    background-color: var(--cta-hover);
-    color: white;
+    background-color: transparent;
+    color: #1a3a32;
 }
 
 .featured-cta {
@@ -27,24 +21,18 @@
     display: inline-block;
     padding: 18px 35px;
     background-color: transparent;
-    color: #2d2d2d;
+    color: var(--text);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8rem;
     transition: all 0.3s ease;
-    border: 1px solid var(--text);
+    border: 1px solid #1a3a32;
 }
 
 .featured-btn:hover {
     background-color: var(--cta-hover);
     color: white;
-}
-
-.error-btns {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
 }
 
 .btn-primary, .btn-secondary {
@@ -56,13 +44,47 @@
     transition: all 0.3s ease;
 }
 
-.btn-primary {
-    background-color: #1a3a32;
-    color: #fff;
+.next-cta {
+    max-width: 400px;
+    width: auto;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.next-cta a {
+    background-color: transparent;
+    color: var(--text);
+    border: 1px solid #1a3a32;
+
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    display: flex;
+    margin: 50px auto 0 auto;
+    justify-content: center;
+    width: 100%;
+}
+
+.next-cta a:hover {
+    background-color: var(--cta-hover);
+    color: white;
+    z-index: 9998;
+}
+
+.error-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .error-content .btn-primary:hover {
-    background-color: #122a24;
+    background-color: #1a3a32;
 }
 
 .error-content .btn-secondary {
