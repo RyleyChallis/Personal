@@ -103,14 +103,16 @@
         align-items: center;
         justify-content: center;
         
-        transition: left 0.5s ease-in-out;
+        padding-top: 60%;
+        transition: left 0.3s ease-in-out;
         z-index: 1500;
     }
 
     .nav-links .logo {
         font-size: 3rem;
         display: flex;
-        margin-top: 50px;
+        margin-top: auto;
+        padding-bottom: 150px;
     }
 
     .nav-links.active {

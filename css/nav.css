@@ -55,3 +55,25 @@ a:hover {
     display: none;
     cursor: pointer;
 }
+
+/* Add this to your query.css or styles.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust for darkness */
+    backdrop-filter: blur(4px);            /* The high-end blurred look */
+    z-index: 1400;                         /* Just below the sidebar */
+    
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
