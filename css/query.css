@@ -4,11 +4,13 @@
         grid-template-columns: repeat(2, 1fr) !important;
         margin: 0 auto !important;
         align-items: center !important;
+        justify-content: center;
         width: 100% !important;
         gap: 30px;
     }
     .service-list .service-item {
         max-width: 100%;
+        width: 450px;
         min-height: 350px;
         display: flex;
         flex-direction: column;
@@ -34,7 +36,17 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) and (max-width: 1023px) {
+    html body header.hero h1 {
+        font-size: 2.2rem !important;
+        max-width: none !important;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero .desktop-only {
+        display: none;
+    }
     #services .service-list {
         display: flex !important;
         flex-direction: column !important;
@@ -136,11 +148,33 @@
 }
 
 @media (max-width: 670px) {
+    body .hero h1 {
+        font-size: 2.2rem !important;
+        max-width: none !important;
+    }
     .faq-list {
         max-width: 80%;
+        width: 450px !important;
     }
     .faq-item, .service-item {
         max-width: 100%;
-        width: 350px !important;
+        width: 450px !important;
+    }
+}
+
+@media (max-width: 580px) {
+    body .hero h1 {
+        font-size: 2rem !important;
+        max-width: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body .hero h1 {
+        font-size: 1.55rem !important;
+        max-width: none !important;
+    }
+    .hero p {
+        font-size: 0.8rem;
     }
 }
