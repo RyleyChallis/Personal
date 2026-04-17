@@ -1,3 +1,61 @@
+@media (min-width: 1024px) {
+    #services .container .service-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 30px;
+    }
+    .service-list .service-item {
+        max-width: 100%;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #recent {
+        min-height: 80vh;
+    }
+    #faqs .faq-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 30px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .faq-item {
+        max-width: 450px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 769px) {
+    #services .service-list {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 20px;
+    }
+    #recent {
+        min-height: 60vh;
+    }
+    .faq-list {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 auto !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         display: flex;
@@ -74,5 +132,15 @@
         font-size: 2rem;
         max-width: 60%;
         margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 670px) {
+    .faq-list {
+        max-width: 80%;
+    }
+    .faq-item {
+        max-width: 100%;
+        width: 350px !important;
     }
 }
