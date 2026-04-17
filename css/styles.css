@@ -1,0 +1,457 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    overflow: hidden;
+    z-index: 2;
+    margin: 0; padding: 0;
+}
+
+section, header {
+    background-color: #0e0e0e;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    font-family: inter;
+    font-weight: 300;
+    color: var(--main-green);
+    margin: 50px 0 10px 0;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+    font-family: jetbrains mono, monospace;
+    font-weight: 300;
+    color: var(--main-green);
+    margin: 0 0 20px 0;
+}
+
+.hero {
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 20px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f121";
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 30rem;
+    color: var(--main-green);
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+    color: var(--text-light);
+    max-width: 850px;
+
+    line-height: 1.4;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-content p {
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    font-family: 'inter', sans-serif;
+}
+
+.about-content .lead {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'jetbrains mono', monospace !important;
+    font-weight: 500;
+}
+
+.tech-stack h3 {
+    color: var(--main-green);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stack-tags span {
+    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid rgba(0, 255, 0, 0.2);
+    color: var(--main-green);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-box {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.stat-box:hover {
+    border-color: var(--main-green);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--main-green);
+}
+
+.stat-label {
+    color: #555;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+#services {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+
+#services::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f2db";
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: 30rem;
+    color: var(--main-green);
+    opacity: 0.07;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 2 !important;
+    overflow: visible !important;
+}
+
+#services h2 {
+    margin-bottom: 60px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.service-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 60px 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: all 0.3s ease;
+    max-width: 850px;
+    backdrop-filter: blur(10px);
+}
+
+.service-item p {
+    line-height: 1.8 !important;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    font-family: 'inter', sans-serif;
+    color: var(--main-green);
+    margin: 0;
+}
+
+.service-item p {
+    font-size: 0.95rem;
+    font-family: 'inter', sans-serif;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.service-item:hover {
+    border-color: #52ff52; /* Your bright green */
+    box-shadow: 0 0 30px rgba(87, 255, 61, 0.238);
+}
+
+#recent h2 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+#recent .container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#recent img {
+    max-width: 60vw;
+    height: auto;
+    border-radius: 7px;
+
+    margin: 0 auto;
+
+    filter: brightness(90%);
+    border: 2px solid var(--main-green);
+    box-shadow: 0 0 30px rgba(70, 207, 49, 0.538);
+    transition: all 0.3s ease;
+}
+
+#recent .description {
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+    color: var(--text-light);
+    max-width: 775px;
+    margin: 0 auto;
+    padding: 75px 0;
+    line-height: 1.4;
+    text-align: center;
+}
+
+#faqs {
+    padding: 80px 40px;
+    position: relative;
+    z-index: 1 !important;
+    overflow: hidden;
+}
+
+#faqs::after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f0e8";
+    position: absolute;
+    top: 65%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 30rem;
+    color: var(--main-green);
+    opacity: 0.07;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#faqs h2 {
+    margin-bottom: 60px;
+}
+
+#faqs .faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.faq-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 650px;
+}
+
+.faq-item p {
+    line-height: 1.8 !important;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+}
+
+.faq-item:hover {
+    border-color: #52ff52;
+    box-shadow: 0 0 30px rgba(87, 255, 61, 0.238);
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    font-family: 'inter', sans-serif;
+    color: var(--main-green);
+    margin: 0 0 15px 0;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    font-family: 'inter', sans-serif;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.4;
+}
+
+#final {
+    min-height: 50vh !important;
+    border-top: 2px solid var(--main-green);
+    border-bottom: 2px solid var(--main-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#final .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#final .rhetorical {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;      /* Semi-bold looks more authoritative */
+    font-size: 4rem;       /* Inter handles being large very well */
+    letter-spacing: -0.03em; /* Tighten it slightly for a high-end feel */
+    line-height: 1.1;
+    color: var(--main-green);
+    text-align: center;
+}
+
+#final .rhetorical span {
+    font-style: italic;
+    color: #fff;           /* White 'Build' creates a strong focal point */
+    text-decoration: underline;
+    text-underline-offset: 8px; /* Gives the underline some breathing room */
+    text-decoration-color: var(--main-green);
+}
+
+.main-footer {
+    background-color: #000;
+    padding: 80px 0 20px 0;
+    border-top: 1px solid rgba(0, 255, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* Brand Section */
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.footer-logo span {
+    color: var(--main-green);
+}
+
+.footer-brand p {
+    color: #888;
+    margin-top: 15px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* Link Columns */
+.footer-links h4 {
+    color: var(--main-green);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #444;
+    font-size: 0.8rem;
+}
