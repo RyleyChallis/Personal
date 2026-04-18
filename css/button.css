@@ -47,3 +47,45 @@
     max-width: 50%;
     margin-top: 75px;
 }
+
+#tipsy .min-btn, #marroccos .min-btn, #elate .min-btn {
+    margin-bottom: 75px;
+}
+
+.pitch-btn, #final .btn {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 18px 35px;
+    background-color: #000 !important;
+    color: var(--main-green);
+    border: 1px solid var(--main-green);
+    text-decoration: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: 'jetbrains mono', monospace !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 2px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pitch-btn i, #final .btn i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pitch-btn:hover, #final .btn:hover {
+    background-color: var(--main-green);
+    color: var(--text-light);
+    box-shadow: 0 0 30px rgba(131, 197, 68, 0.3) !important;
+    transform: none !important;
+}
+
+.pitch-btn:hover i, #final .btn:hover i {
+    transform: translateX(5px);
+}
