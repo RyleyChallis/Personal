@@ -195,7 +195,7 @@
 
 @media (max-width: 580px) {
     body .hero h1 {
-        font-size: 2rem !important;
+        font-size: 2.3rem !important;
         max-width: none !important;
     }
     .about-grid {
