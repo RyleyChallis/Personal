@@ -306,6 +306,9 @@
 }
 
 @media (max-width: 420px) {
+    .nav-links {
+        margin: 0 !important;
+    }
     body header.hero h1 {
         font-size: 2.2rem !important;
         max-width: none !important;
