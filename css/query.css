@@ -226,6 +226,22 @@
     p {
         font-size: 1rem !important;
     }
+    #tipsy .min-btn, #elate .min-btn {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 40px 0 !important;
+    }
+
+    #tipsy .min-btn a, #elate .min-btn a {
+        width: fit-content !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 400px) {
