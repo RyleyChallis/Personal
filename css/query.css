@@ -300,7 +300,7 @@
 
 @media (max-width: 420px) {
     body .hero h1 {
-        font-size: 1.6rem !important;
+        font-size: 1.8rem !important;
         max-width: none !important;
         line-height: 1;
     }
@@ -334,6 +334,10 @@
     .stat-box .stat-number {
         font-size: 1.8rem;
     }
+    body #recent .container img {
+        width: 80vw !important;
+        max-width: 80vw !important;
+    }
     .faq-list {
         gap: 5px !important;
     }
@@ -351,5 +355,14 @@
     .soon, #gallery .card {
         width: 300px !important;
         height: auto;
+    }
+    #final h2 {
+        width: 90% !important;
+        max-width: 90% !important;
+    }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
