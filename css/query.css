@@ -244,8 +244,9 @@
 
 @media (max-width: 480px) {
     body .hero h1 {
-        font-size: 1.7rem !important;
+        font-size: 2rem !important;
         max-width: none !important;
+        line-height: 1;
     }
     .hero p {
         font-size: 0.8rem;
