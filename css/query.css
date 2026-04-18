@@ -212,6 +212,11 @@
         width: 400px !important;
         height: auto;
     }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -234,11 +239,6 @@
         margin: 15px 0 !important;
         padding: 25px !important;
         box-sizing: border-box !important;
-    }
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
 }
 
