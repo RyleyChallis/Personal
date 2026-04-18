@@ -306,7 +306,7 @@
 
 @media (max-width: 420px) {
     body .hero h1 {
-        font-size: 1.8rem !important;
+        font-size: 2rem !important;
         max-width: none !important;
         line-height: 1;
     }
