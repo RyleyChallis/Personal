@@ -235,6 +235,11 @@
         padding: 25px !important;
         box-sizing: border-box !important;
     }
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -359,10 +364,5 @@
     #final h2 {
         width: 90% !important;
         max-width: 90% !important;
-    }
-    footer .container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
     }
 }
